@@ -104,5 +104,12 @@ namespace BaasBoxNet.Services
                 httpClient.DefaultRequestHeaders.Add("X-BB-SESSION", _box.User.Session);
             return httpClient;
         }
+
+        public async Task<byte[]> GetFile(string fileID, CancellationToken cancellation)
+        {
+            var client = GetHttpClient();
+            var response = await client.GetByteArrayAsync(CreateRequestUrl("file/") + fileID);
+            return response;
+        }
     }
 }
