@@ -42,6 +42,7 @@
     <Compile Include="BaasBoxCollections.cs" />
     <Compile Include="BaasBoxConfig.cs" />
     <Compile Include="BaasBoxDocuments.cs" />
+    <Compile Include="BaasBoxPlugins.cs" />
     <Compile Include="BaasBoxUserManagement.cs" />
     <Compile Include="BaasFiles.cs" />
     <Compile Include="Constants.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="Exceptions\BaasValidationException.cs" />
     <Compile Include="IBaasBoxCollections.cs" />
     <Compile Include="IBaasBoxDocuments.cs" />
+    <Compile Include="IBaasBoxPlugins.cs" />
     <Compile Include="IBaasBoxUserManagement.cs" />
     <Compile Include="IBaasFiles.cs" />
     <Compile Include="Models\BaasBoxResponse.cs" />

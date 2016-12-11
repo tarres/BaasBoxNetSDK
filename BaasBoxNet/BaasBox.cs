@@ -30,6 +30,7 @@ namespace BaasBoxNet
             Collections = new BaasBoxCollections(this);
             Documents = new BaasBoxDocuments(this);
             Files = new BaasFiles(this);
+            Plugins = new BaasBoxPlugins(this);
         }
 
         public BaasUser User { get; set; }
@@ -45,5 +46,7 @@ namespace BaasBoxNet
         internal RestService RestService { get; private set; }
 
         public IBaasFiles Files { get; private set; }
+
+        public IBaasBoxPlugins Plugins { get; private set; }
     }
 }
